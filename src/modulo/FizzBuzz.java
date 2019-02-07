@@ -3,6 +3,7 @@
 
 package modulo;
 
+import javax.swing.JOptionPane;
 
 /**
 * Fizz Buzz
@@ -26,6 +27,36 @@ package modulo;
 **/
 
 public class FizzBuzz {
+public static void main(String[] args) {
+ 
+ 
+ 
+ 
+ 
+ for (int i = 0; i < 21; i++) {
+	
+	 String ok = JOptionPane.showInputDialog("Number");
+	 int hi = Integer.parseInt(ok);
+	 
+ 
+ if(hi%5 == 0) {
+	JOptionPane.showConfirmDialog(null, "Buzz");
+ }
 
+if(hi%3 == 0) {
+	JOptionPane.showConfirmDialog(null, "Fizz");
+}
+
+if(hi%3 == 0 && hi%5 == 0){
+
+JOptionPane.showConfirmDialog(null, "Fizzbuzz");
+
+
+}
+}
+
+
+
+}
 }
 
